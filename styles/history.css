@@ -1,0 +1,30 @@
+.history {
+  text-align: center;
+}
+.container {
+}
+.history-title {
+  margin: 65px 0 73px 0;
+  font-weight: 700;
+  font-size: 34px;
+}
+.history-text {
+  margin: 30px 0 70px 0;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.history-img {
+  max-width: 950px;
+  height: 655px;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 400px) {
+  .history-text {
+    margin: 33px 0 79px 0;
+    font-weight: 500;
+    font-size: 14px;
+  }
+}
