@@ -3,15 +3,17 @@ body {
 }
 
 .container {
-  max-width: 950px;
+  max-width: 970px;
   margin: 0 auto;
   padding: 0 20px 0 20px;
 }
 
 a {
   text-decoration: none;
+  color: unset;
 }
 
 li {
   list-style: none;
+  color: unset;
 }
