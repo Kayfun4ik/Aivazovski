@@ -3,6 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="preload"
+      as="font"
+      href="fonts/Roboto-Regular.woff2"
+      type="font/woff2"
+      crossorigin
+    />
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="icon" href="assets/favicon/favicon.png" type="image/png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -44,12 +51,13 @@
           <p class="home-subtitle">
             Russian marine painter of Armenian origin, collector, philanthropist
           </p>
-          <img
-            src="assets/webp/1.webp"
-            srcset="assets/webp/1-mobile.webp 400w, assets/webp/1.webp 800w"
-            alt="Aivazovski"
-            class="home-img"
-          />
+          <picture>
+            <source
+              srcset="assets/webp/1-mobile.webp"
+              media="(max-width: 400px)"
+            />
+            <img src="assets/webp/1.webp" alt="Aivazovski" class="home-img" />
+          </picture>
         </div>
       </section>
       <section class="about-section" id="about">
@@ -83,55 +91,100 @@
       <section class="history" id="history">
         <div class="container">
           <h2 class="history-title">History</h2>
-          <img class="history-img" src="assets/webp/2.webp" alt="History" srcset="assets/webp/2-mobile.webp 400w">
-          <p class="history-text">Дом в котором родился Айвазовский | The house where Aivazovsky was born </p>
+          <picture>
+            <source
+              srcset="assets/webp/2-mobile.webp"
+              media="(max-width: 400px)"
+            />
+            <img
+              src="assets/webp/2.webp"
+              alt="Aivazovski"
+              class="history-img"
+            />
+          </picture>
+          <p class="history-text">
+            Дом в котором родился Айвазовский | The house where Aivazovsky was
+            born
+          </p>
         </div>
       </section>
       <section class="portfolio" id="portfolio">
-        <div class="container">
-          <h2 class="portfolio-title">Portfolio</h2>
-          <img class="portfolio-img" src="assets/webp/3.webp" alt="" srcset="assets/webp/3-mobile.webp 400w">
-          <p class="portfolio-text">Зимний обоз в пути, 1857 г. | Winter wagon train on the way, 1857</p>
-          <img class="portfolio-img" src="assets/webp/4.webp" alt="" srcset="assets/webp/4-mobile.webp 400w">
-          <p class="portfolio-text">Радуга, 1873 г. | Rainbow, 1873</p>
-          <img class="portfolio-img" src="assets/webp/5.webp" alt="" srcset="assets/webp/5-mobile.webp 400w">
-          <p class="portfolio-text">Неаполитанский залив утром, 1893 г. | Gulf of Naples in the morning, 1893</p>
-
-        </div>
-      
+        <h2 class="portfolio-title">Portfolio</h2>
+        <picture>
+          <source
+            srcset="assets/webp/3-mobile.webp"
+            media="(max-width: 400px)"
+          />
+          <img
+            src="assets/webp/3.webp"
+            alt="Aivazovski"
+            class="portfolio-img"
+          />
+        </picture>
+        <p class="portfolio-text">
+          Зимний обоз в пути, 1857 г. | Winter wagon train on the way, 1857
+        </p>
+        <picture>
+          <source
+            srcset="assets/webp/4-mobile.webp"
+            media="(max-width: 400px)"
+          />
+          <img
+            src="assets/webp/4.webp"
+            alt="Aivazovski"
+            class="portfolio-img"
+          />
+        </picture>
+        <p class="portfolio-text">Радуга, 1873 г. | Rainbow, 1873</p>
+        <picture>
+          <source
+            srcset="assets/webp/5-mobile.webp"
+            media="(max-width: 400px)"
+          />
+          <img
+            src="assets/webp/5.webp"
+            alt="Aivazovski"
+            class="portfolio-img"
+          />
+        </picture>
+        <p class="portfolio-text">
+          Неаполитанский залив утром, 1893 г. | Gulf of Naples in the morning,
+          1893
+        </p>
+      </section>
     </main>
     <footer class="Contacts">
       <div class="container">
         <h2 class="contacts-title" id="contacts">Contacts</h2>
-        <button class="btn">
-          <a class="btn-link" href="https://ayvazovskiy.su/">ayvazovskiy.su</a>
-        </button>
+        <form action="https://ayvazovskiy.su/" method="get" target="_blank">
+          <button class="btn" type="submit">ayvazovskiy.su</button>
+        </form>
+
         <address class="Social-icons">
-        <a href="#">
-          <svg class="icon">
-            <use href="assets/sprites.svg#youtube-icon"></use>
-
-          </svg></a>
-        <a href="">
-          <svg class="icon">
-            <use href="assets/sprites.svg#linkedin-icon"></use>
-
-          </svg>
-        </a>
-        <a href="">
-          <svg class="icon">
-            <use href="assets/sprites.svg#instagram-icon"></use>
-
-          </svg>
-        </a>
-        <a href="">
-          <svg class="icon">
-            <use href="assets/sprites.svg#facebook-icon"></use>
-
-        </svg>
-        </a>
+          <a href="#" aria-label="youtube icon">
+            <svg class="icon">
+              <use href="assets/sprites.svg#youtube-icon"></use>
+            </svg>
+          </a>
+          <a href="" aria-label="linkedin icon">
+            <svg class="icon">
+              <use href="assets/sprites.svg#linkedin-icon"></use>
+            </svg>
+          </a>
+          <a href="" aria-label="instagram icon">
+            <svg class="icon">
+              <use href="assets/sprites.svg#instagram-icon"></use>
+            </svg>
+          </a>
+          <a href="" aria-label="facebook icon">
+            <svg class="icon">
+              <use href="assets/sprites.svg#facebook-icon"></use>
+            </svg>
+          </a>
         </address>
-        <p class="contacts-subtitle">More works you can see in these social networks</p>
+        <p class="contacts-subtitle">
+          More works you can see in these social networks
+        </p>
       </div>
     </footer>
   </body>
