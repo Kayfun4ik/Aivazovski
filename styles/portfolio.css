@@ -16,10 +16,12 @@
   margin: 40px 0 95px 0;
   font-weight: 500;
   font-size: 18px;
+  padding: 0 20px;
 }
 
 .portfolio-img {
   max-width: 950px;
+  padding: 0 20px;
 
   width: 100%;
 }
