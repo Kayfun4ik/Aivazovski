@@ -18,6 +18,7 @@
   max-width: 950px;
   height: 655px;
   width: 100%;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 

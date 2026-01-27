@@ -7,7 +7,11 @@
 }
 
 .nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
@@ -40,6 +44,8 @@
   bottom: -5px;
   height: 1px;
   background-color: var(--text-color);
+  -webkit-transition: right 0.5s ease;
+  -o-transition: right 0.5s ease;
   transition: right 0.5s ease;
 }
 
